@@ -1,8 +1,8 @@
 {
-  "name": "Simple-Static-React",
-  "version": "1.0.2",
-  "description": "Minimal boilerplate and configuration for the development of static react & es6 sites",
-  "repository": "https://github.com/Jon-Biz/simple-static-react",
+  "name": "TicTacToe",
+  "version": "1.0.0",
+  "description": "Simple static react tic tac toe app", 
+  "repository": "https://github.com/erinveasey/tictactoe",
   "scripts": {
     "webpack": "node ./node_modules/webpack/bin/webpack.js",
     "webpack-dev-server": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -15,9 +15,13 @@
       "react"
     ]
   },
-  "author": "jon-biz",
-  "license": "MIT",
+  "author": "erinveasey",
+  "license": "ISC",
   "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
     "babel-core": "^6.7.7",
     "babel-loader": "^6.2.4",
     "babel-polyfill": "^6.7.4",
@@ -25,8 +29,6 @@
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"

@@ -1,26 +1,31 @@
 import "babel-polyfill"
 import React, {Component} from 'react'
 import ReactDom from 'react-dom'
+import App from './components/App.jsx';
+import Game from './components/Game.jsx';
 
 require('./style.css')
 
 class HelloWorld extends Component{
 
   render() {
+    const players = ['X', 'O'].forEach((id) => {
+
+      return {
+        id: {
+          rows: [],
+          cols: [],
+          lDiag: [],
+          rDiag: []
+        }
+      }
+    });
     return (
-      <div>
-        <h1>Hello World.</h1>
-        Don't forget to:
-        <ul>
-          <li>
-            Run 'npm run build' before uploading your public directory to your website.
-          </li>
-        </ul>
-      </div>
+      <App />
     )
   }
 }
 
 const content = document.getElementById('app')
 
-ReactDom.render(<HelloWorld />, content)
+ReactDom.render(<HelloWorld/>, content)
